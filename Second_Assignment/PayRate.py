@@ -9,5 +9,8 @@ hrate = float(hrate)
 #Calculate Gross Pay
 gropay=(hrs*hrate)
 
+#Alternate approach from Dr Chuck.  Reduces to 4 lines of code vs 6.
+#gropay=float(hrs) * float(hrate)
+
 #Display Output
 print("Pay:",gropay)
