@@ -12,9 +12,9 @@ otrate = (1.5 * hrate)
 #Calculate and display base pay without overtime
 if hrs <= 40 :
     stpay = (hrate * hrs)
-    print ("Pay:",stpay)
+    print (stpay)
 elif hrs > 40 :
     stpay = (hrate * 40)
     othrs = (hrs - 40)
     otpay = (othrs * otrate)
-    print ("Pay:",stpay + otpay)
+    print (stpay + otpay)
