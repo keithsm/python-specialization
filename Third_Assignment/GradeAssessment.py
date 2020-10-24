@@ -1,6 +1,10 @@
 #Enter and validate range of input (0.0 - 1.0).
 score = input("Enter Score (0.0 - 1.0): ")
-score = float(score)
+try:
+    score = float(score)
+except:
+    print('Error, please enter numeric input.')
+    quit()
 if score < 0.0 :
     print ("Score cannot be less than 0.0. Please retry.")
 elif score > 1.0 :
