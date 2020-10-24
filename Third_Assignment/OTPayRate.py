@@ -13,7 +13,7 @@ if hrs <= 40 :
 
 #Calculate and display first 40 hours at base hourly
 #rate and add overtime pay
-elif hrs > 40 :
+else :
     regpay = (hrate * 40)
     othrs = (hrs - 40)
     otpay = (othrs * otrate)
