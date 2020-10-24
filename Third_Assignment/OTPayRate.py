@@ -1,4 +1,5 @@
-#Gather and define pay criteria
+#Gather and define pay criteria and convert to float.
+#Define overtime rate
 hrs = input("Enter Hours:")
 hrate = input("Enter Hourly Rate:")
 hrs = float(hrs)
