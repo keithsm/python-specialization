@@ -14,7 +14,7 @@ if hrs <= 40 :
     stpay = (hrate * hrs)
     print ("Pay:",stpay)
 elif hrs > 40 :
-    stpay = (hrate * hrs)
+    stpay = (hrate * 40)
     othrs = (hrs - 40)
     otpay = (othrs * otrate)
     print ("Pay:",stpay + otpay)
