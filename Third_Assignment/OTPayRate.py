@@ -8,7 +8,7 @@ otrate = (1.5 * hrate)
 #Calculate and display base pay without overtime
 if hrs <= 40 :
     regpay = (hrate * hrs)
-    print (stpay)
+    print (regpay)
 
 #Calculate and display first 40 hours at base hourly
 #rate and add overtime pay
