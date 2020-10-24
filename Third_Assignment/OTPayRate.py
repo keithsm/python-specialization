@@ -1,18 +1,19 @@
-#Gather pay criteria
+#Gather and define pay criteria
 hrs = input("Enter Hours:")
 hrate = input("Enter Hourly Rate:")
+otrate = (1.5 * hrate)
 
 #Convert 'hrs' and 'hrate' to floating point
 hrs = float(hrs)
 hrate = float(hrate)
 
-#Define overtime rate
-otrate = (1.5 * hrate)
-
 #Calculate and display base pay without overtime
 if hrs <= 40 :
     stpay = (hrate * hrs)
     print (stpay)
+
+#Calculate and display first 40 hours at base hourly
+#rate and add overtime pay
 elif hrs > 40 :
     stpay = (hrate * 40)
     othrs = (hrs - 40)
