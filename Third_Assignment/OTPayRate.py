@@ -1,11 +1,9 @@
 #Gather and define pay criteria
 hrs = input("Enter Hours:")
 hrate = input("Enter Hourly Rate:")
-otrate = (1.5 * hrate)
-
-#Convert 'hrs' and 'hrate' to floating point
 hrs = float(hrs)
 hrate = float(hrate)
+otrate = (1.5 * hrate)
 
 #Calculate and display base pay without overtime
 if hrs <= 40 :
