@@ -14,24 +14,18 @@ while True:
       print('Invalid input')
       continue
 
-#After the first entry, largest_num and smallest_num
-#are equal
-  largest_num = num
-  smallest_num = num
-
+#After the first entry, the largest_num and smallest_num
+#variables are equal
+  if largest_num is None :
+    largest_num = num
+    smallest_num = num
+#Compare new entry 'num' against largest_num and 
+#smallest_num
   if largest_num < num :
-        largest_num = num
+    largest_num = num
   elif smallest_num > num :
-        smallest_num = num
+    smallest_num = num
 
-#Determine the largest and smallest numbers
-#  if largest_num is None :
-#    largest_num = num
-#  elif num > largest_num :
-#    largest_num = num
-# elif smallest_num == None :
-#    smallest_num = num
-#  elif num < smallest_num :
-#    smallest_num = num
+#Print output
 print ('Maximum is', largest_num)
 print ('Minimum is', smallest_num)
