@@ -8,6 +8,7 @@ file_contents = open (fname)
 
 #Read the file contents
 text = file_contents.read()
+text = text.rstrip()
 
 #Convert to uppercase and display
 uc_text = text.upper()
