@@ -12,13 +12,14 @@ if choice == 'l' :
     for stringltrs in string :
         dictltrs[stringltrs] = dictltrs.get(stringltrs,0) + 1
 
+#Create a list. Iterate through dictionary and add tuples to the list.
+#Sort the list and display.
     letters_list = list()
     for stringltrs, lcounts in dictltrs.items() :
         lvalues = (stringltrs, lcounts)
         letters_list.append(lvalues)
         letters_list = sorted(letters_list)
     print(letters_list)
-#    quit()
 
 if choice == 'w' :
     stringwords = string.split()
@@ -32,4 +33,3 @@ if choice == 'w' :
         words_list.append(wvalues)
         words_list = sorted(words_list)
     print(words_list)
-#    quit()
