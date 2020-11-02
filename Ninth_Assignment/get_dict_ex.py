@@ -1,5 +1,5 @@
 #Dictionary example using 'get'
-#Prints the number of times a given word occurs in a string of text.
+#Prints the number of times a given letter or word occurs in a string of text.
 print('Enter a string of words:')
 string = input()
 
@@ -11,11 +11,25 @@ if choice == 'l' :
     dictltrs = dict()
     for stringltrs in string :
         dictltrs[stringltrs] = dictltrs.get(stringltrs,0) + 1
-    print(dictltrs)
+
+    letters_list = list()
+    for stringltrs, lcounts in dictltrs.items() :
+        lvalues = (stringltrs, lcounts)
+        letters_list.append(lvalues)
+        letters_list = sorted(letters_list)
+    print(letters_list)
+#    quit()
+
 if choice == 'w' :
     stringwords = string.split()
     dictsplit = dict()
     for words in stringwords :
         dictsplit[words] = dictsplit.get(words,0) + 1
-    print(dictsplit)
-quit()
+
+    words_list = list()
+    for words, wcounts in dictsplit.items() :
+        wvalues = (words, wcounts)
+        words_list.append(wvalues)
+        words_list = sorted(words_list)
+    print(words_list)
+#    quit()
